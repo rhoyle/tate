@@ -15,6 +15,6 @@ Route::prefix('admin')->name('admin.')->group(function (){
     Route::get('users', [Admin\UsersController::class, 'index'])
         ->name('users.index');
 
-    Route::view('profile', 'profile')->name('profile');
+    Route::view('profile', 'admin.profile')->name('profile');
 
 });

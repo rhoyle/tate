@@ -12,6 +12,6 @@ Route::prefix('staff')->name('staff.')->group(function (){
     Route::get('dashboard', [staff\DashboardController::class, 'dashboard'])
         ->name('dashboard');
 
-    Route::view('profile', 'profile')->name('profile');
+    Route::view('profile', 'staff.profile')->name('profile');
 
 });

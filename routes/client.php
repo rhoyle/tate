@@ -12,6 +12,6 @@ Route::prefix('client')->name('client.')->group(function (){
     Route::get('dashboard', [Client\DashboardController::class, 'dashboard'])
         ->name('dashboard');
 
-    Route::view('profile', 'profile')->name('profile');
+    Route::view('profile', 'client.profile')->name('profile');
 
 });
